@@ -7,11 +7,11 @@ including Logistic Regression, Random Forest, XGBoost, and LSTM, the goal is to 
 1. **Goal**-	: To accurately classify customer reviews as positive or negative using machine learning techniques on text data.
 2. **Dataset**	: The dataset consists of Amazon customer reviews, where reviews are labeled as either positive or negative. It is sourced from a text file containing millions of reviews.
 
-		-**Rows**: Millions of customer reviews (sampled for this project).
-		- **Columns**: Each review consists of two columns:
-			1.Label: __label__1 for negative and __label__2 for positive reviews.
-			2.Text: The actual customer review content.
-		- **Target Variable**: Sentiment (positive or negative).
+	-**Rows**: Millions of customer reviews (sampled for this project).
+	- **Columns**: Each review consists of two columns:
+		1.Label: __label__1 for negative and __label__2 for positive reviews.
+		2.Text: The actual customer review content.
+	- **Target Variable**: Sentiment (positive or negative).
 
 ## Techniques Used:
 1. **Data Preprocessing**:
