@@ -1,4 +1,5 @@
-Amazon Customer Sentiment Analysis
+#Amazon Customer Sentiment Analysis
+
 This project performs sentiment analysis on Amazon customer reviews using various machine learning models like Random Forest, Logistic Regression, XGBoost, and LSTM. The dataset consists of customer reviews, aiming to predict whether the review has a positive or negative sentiment.
 
 ## Project Overview:
