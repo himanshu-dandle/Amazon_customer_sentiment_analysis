@@ -1,65 +1,46 @@
 # Amazon Customer Sentiment Analysis
 
-This project utilizes Natural Language Processing (NLP) to perform sentiment analysis on customer reviews of Amazon products. By applying various machine learning models,
-including Logistic Regression, Random Forest, XGBoost, and LSTM, the goal is to classify customer reviews as either positive or negative.
+This project aims to perform sentiment analysis on Amazon product reviews, using various machine learning models such as Logistic Regression, Random Forest, XGBoost, and LSTM (Long Short-Term Memory). By analyzing customer feedback, we aim to predict the sentiment behind each review—whether positive or negative—based on the review text.
 
 ## Project Overview:
-1. **Goal**-	: To accurately classify customer reviews as positive or negative using machine learning techniques on text data.
-2. **Dataset**	: The dataset consists of Amazon customer reviews, where reviews are labeled as either positive or negative. It is sourced from a text file containing millions of reviews.
+1. **Goal**-	:To analyze customer reviews and predict the sentiment (positive or negative) using different machine learning and deep learning models.
+2. **Dataset**	: The dataset used for this project is sourced from publicly available Amazon product reviews.
 
-	-**Rows**: Millions of customer reviews (sampled for this project).
-	- **Columns**: Each review consists of two columns:
-		1.Label: __label__1 for negative and __label__2 for positive reviews.
-		2.Text: The actual customer review content.
-	- **Target Variable**: Sentiment (positive or negative).
+	-**Rows**: Varies depending on your sample size.
+	- **Columns**: label (sentiment: positive/negative), text (review content).
+	- **Target Variable**: Sentiment (1 for positive, 0 for negative).
 
 ## Techniques Used:
 1. **Data Preprocessing**:
-	Cleaned text (removing special characters, numbers, and stopwords).
-	Tokenized and vectorized using TF-IDF to transform text into numerical data.
+	Handling missing values.
+	Text preprocessing including tokenization, stemming, and lowercasing.
+	Label encoding for sentiment classification.
 
 2. **Exploratory Data Analysis (EDA)**:
-	Visualized distribution of sentiment labels, most frequent words, and the relationship between word frequency and sentiment.
+	Word Cloud and frequency analysis to identify key terms in positive and negative reviews.
+	Visualization of review length, term frequency, and class distributions.
+	
+3. **Modeling**:
+
+	A comparison of classification models, including Logistic Regression, Random Forest, XGBoost, and LSTM.
+	Cross-validation and hyperparameter tuning using GridSearchCV.
 
 3. **Model Evaluation**:
-  	--Built and evaluated multiple models: Logistic Regression, Random Forest, XGBoost, and LSTM.
-	--Applied cross-validation and hyperparameter tuning to improve model performance.
-	--Models were evaluated using accuracy, precision, recall, F1-score, and ROC-AUC metrics.
+	Accuracy, Precision, Recall, F1-Score, and ROC-AUC to evaluate and compare model performance.
 	
+##Results
+Best Model: The LSTM (Long Short-Term Memory) model provided the best performance:
+	Accuracy: 88.00%
+	ROC-AUC Score: 0.9407
 
-## Project Steps:
-Data Preprocessing:
-		1.Removed missing values from the dataset.
-		2.Cleaned text data by removing special characters, converting text to lowercase, and tokenizing.
-		3.Vectorized the text using TF-IDF for machine learning models.
+##Model Performance Comparison:
 
-## Exploratory Data Analysis (EDA):
-1.Analyzed key features such as word frequency and sentiment distribution.
-2.Created visualizations showing customer review sentiment trends.
-
-## Modeling:
-Trained classification models, including:
-		1.Logistic Regression
-		2.Random Forest
-		3.XGBoost
-		4.LSTM
-		5.Applied cross-validation and hyperparameter tuning to optimize model performance.
-
-## Model Evaluation:
-Evaluated models using metrics such as accuracy, precision, recall, F1-score, and ROC-AUC.
-Results:
-	Best Model: The LSTM model performed the best with:
-	Accuracy: 88%
-	ROC-AUC: 0.94
-	Feature Importance:
-	Important features for sentiment classification:
-	Review Text (keyword frequency)
-	Review Length
-
-## Improvements:
-1.Data Augmentation: Implemented SMOTE to handle class imbalance in the dataset.
-2.Hyperparameter Tuning: Used RandomizedSearchCV to fine-tune hyperparameters for Random Forest, Logistic Regression, and XGBoost.
-3.Deep Learning: Integrated LSTM for sequence modeling, which improved accuracy and the ROC-AUC score.
+| Model               | Accuracy | Precision | Recall | ROC-AUC |
+|---------------------|----------|-----------|--------|---------|
+| Logistic Regression  | 87.02%   | 88%       | 87%    | 0.9432  |
+| Random Forest        | 84.15%   | 85%       | 84%    | 0.9196  |
+| XGBoost              | 84.35%   | 86%       | 85%    | 0.9235  |
+| LSTM                 | 88.00%   | 89%       | 88%    | 0.9407  |
 
 
 ## Visualizations:
@@ -84,37 +65,29 @@ Below are the ROC-AUC curves for various models:
 - **XGBoost**:
 ![ROC-AUC XGBoost](output/roc_curve_xgboost.png)
 
-These visualizations help demonstrate the performance of the models and show their ability to distinguish between positive and negative sentiments.
-
-
-
-These visualizations provide insights into model performance and feature importance.
-
-- **Model Performance Comparison**:
-
-| Model               | Accuracy | Precision | Recall | ROC-AUC |
-|---------------------|----------|-----------|--------|---------|
-| Logistic Regression  | 87.02%   | 88%       | 87%    | 0.9432  |
-| Random Forest        | 84.15%   | 85%       | 84%    | 0.9196  |
-| XGBoost              | 84.35%   | 86%       | 85%    | 0.9235  |
-| LSTM                 | 88.00%   | 89%       | 88%    | 0.9407  |
-
+## Improvements:
+1.Data Imbalance: Use SMOTE or downsampling to address the imbalance in positive vs. negative reviews.
+2.Tuning: Further hyperparameter tuning using RandomizedSearchCV to improve model performance.
+3.Text Embeddings: Consider using advanced text embeddings like Word2Vec or GloVe for feature extraction.
 
 
 ## How to Run:
-### Clone the repository:
+1.Clone the repository:
 
 
 
 	git clone https://github.com/himanshu-dandle/Amazon_customer_sentiment_analysis.git
 
-### Install dependencies:
+2.Install dependencies:
 
 
+	pip install -r requirements.txt
+	
+3.Navigate to the Jupyter notebook in the notebooks/ directory and run the analysis.
 
-	conda env create -f environment.yml
-	conda activate sentiment-env
-### Download dataset:
+4.To replicate the results, use the preprocessed datasets from data/ and execute the .ipynb notebook.
+
+5.Download dataset:
 
 You can download the dataset from [Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn).
 Place the train.ft.txt and test.ft.txt files in the data/ folder.
@@ -122,3 +95,6 @@ Place the train.ft.txt and test.ft.txt files in the data/ folder.
 ### Run the Jupyter notebook:
 
 	jupyter notebook notebooks/sentiment_analysis.ipynb
+	
+##Conclusion
+The LSTM model outperformed traditional machine learning models like Logistic Regression and Random Forest in sentiment analysis tasks for Amazon product reviews, demonstrating the effectiveness of deep learning models in text-based classification tasks.
