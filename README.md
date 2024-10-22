@@ -90,6 +90,16 @@ These visualizations help demonstrate the performance of the models and show the
 
 These visualizations provide insights into model performance and feature importance.
 
+##Model Performance Comparison:
+
+| Model               | Accuracy | Precision | Recall | ROC-AUC |
+|---------------------|----------|-----------|--------|---------|
+| Logistic Regression  | 87.02%   | 88%       | 87%    | 0.9432  |
+| Random Forest        | 84.15%   | 85%       | 84%    | 0.9196  |
+| XGBoost              | 84.35%   | 86%       | 85%    | 0.9235  |
+| LSTM                 | 88.00%   | 89%       | 88%    | 0.9407  |
+
+
 
 ## How to Run:
 ### Clone the repository:
