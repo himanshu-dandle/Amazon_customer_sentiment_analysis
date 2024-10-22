@@ -116,7 +116,8 @@ These visualizations provide insights into model performance and feature importa
 	conda activate sentiment-env
 ### Download dataset:
 
-Place the train.ft.txt and test.ft.txt files in the data/ folder.
+	You can download the dataset from [Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn).
+	Place the train.ft.txt and test.ft.txt files in the data/ folder.
 ### Run the Jupyter notebook:
 
 	jupyter notebook notebooks/sentiment_analysis.ipynb
