@@ -1,16 +1,17 @@
 #Amazon Customer Sentiment Analysis
+
 This project utilizes Natural Language Processing (NLP) to perform sentiment analysis on customer reviews of Amazon products. By applying various machine learning models,
- including Logistic Regression, Random Forest, XGBoost, and LSTM, the goal is to classify customer reviews as either positive or negative.
+including Logistic Regression, Random Forest, XGBoost, and LSTM, the goal is to classify customer reviews as either positive or negative.
 
 ## Project Overview:
 1. **Goal**-	: To accurately classify customer reviews as positive or negative using machine learning techniques on text data.
 2. **Dataset**	: The dataset consists of Amazon customer reviews, where reviews are labeled as either positive or negative. It is sourced from a text file containing millions of reviews.
 
-		-Rows: Millions of customer reviews (sampled for this project).
-		- Columns: Each review consists of two columns:
+		-**Rows**: Millions of customer reviews (sampled for this project).
+		- **Columns**: Each review consists of two columns:
 			1.Label: __label__1 for negative and __label__2 for positive reviews.
 			2.Text: The actual customer review content.
-		- Target Variable: Sentiment (positive or negative).
+		- **Target Variable**: Sentiment (positive or negative).
 
 ## Techniques Used:
 1. **Data Preprocessing**:
@@ -33,8 +34,8 @@ Data Preprocessing:
 		3.Vectorized the text using TF-IDF for machine learning models.
 
 ## Exploratory Data Analysis (EDA):
-	1.Analyzed key features such as word frequency and sentiment distribution.
-	2.Created visualizations showing customer review sentiment trends.
+1.Analyzed key features such as word frequency and sentiment distribution.
+2.Created visualizations showing customer review sentiment trends.
 
 ## Modeling:
 Trained classification models, including:
@@ -45,7 +46,7 @@ Trained classification models, including:
 		5.Applied cross-validation and hyperparameter tuning to optimize model performance.
 
 ## Model Evaluation:
-	Evaluated models using metrics such as accuracy, precision, recall, F1-score, and ROC-AUC.
+Evaluated models using metrics such as accuracy, precision, recall, F1-score, and ROC-AUC.
 Results:
 	Best Model: The LSTM model performed the best with:
 	Accuracy: 88%
@@ -56,9 +57,9 @@ Results:
 	Review Length
 
 ## Improvements:
-	1.Data Augmentation: Implemented SMOTE to handle class imbalance in the dataset.
-	2.Hyperparameter Tuning: Used RandomizedSearchCV to fine-tune hyperparameters for Random Forest, Logistic Regression, and XGBoost.
-	3.Deep Learning: Integrated LSTM for sequence modeling, which improved accuracy and the ROC-AUC score.
+1.Data Augmentation: Implemented SMOTE to handle class imbalance in the dataset.
+2.Hyperparameter Tuning: Used RandomizedSearchCV to fine-tune hyperparameters for Random Forest, Logistic Regression, and XGBoost.
+3.Deep Learning: Integrated LSTM for sequence modeling, which improved accuracy and the ROC-AUC score.
 
 
 ## Visualizations:
