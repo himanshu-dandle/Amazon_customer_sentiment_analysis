@@ -2,8 +2,8 @@ Amazon Customer Sentiment Analysis
 This project involves sentiment analysis on Amazon customer reviews, utilizing natural language processing (NLP) techniques to classify reviews as positive or negative.
 
 Project Structure
-bash
-Copy code
+
+
 AMZ_customer_sentiment/
 │
 ├── data/                   # Dataset files (excluded from GitHub)
@@ -36,19 +36,19 @@ Detailed comparison and model performance metrics are documented in the notebook
 How to Run
 Clone the repository:
 
-bash
-Copy code
+
+
 git clone https://github.com/himanshu-dandle/Amazon_customer_sentiment_analysis.git
 Create and activate the Conda environment:
 
-bash
-Copy code
+
+
 conda env create -f environment.yml
 conda activate customer-sentiment-env
 Launch the Jupyter notebook:
 
-bash
-Copy code
+
+
 jupyter notebook notebooks/sentiment_analysis.ipynb
 Ensure the dataset files are in the data/ folder and excluded from version control (.gitignore).
 
