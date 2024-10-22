@@ -3,14 +3,14 @@ This project utilizes Natural Language Processing (NLP) to perform sentiment ana
  including Logistic Regression, Random Forest, XGBoost, and LSTM, the goal is to classify customer reviews as either positive or negative.
 
 ## Project Overview:
-	-**Goal**-: To accurately classify customer reviews as positive or negative using machine learning techniques on text data.
-	- **Dataset**: The dataset consists of Amazon customer reviews, where reviews are labeled as either positive or negative. It is sourced from a text file containing millions of reviews.
+1. **Goal**-	: To accurately classify customer reviews as positive or negative using machine learning techniques on text data.
+2. **Dataset**	: The dataset consists of Amazon customer reviews, where reviews are labeled as either positive or negative. It is sourced from a text file containing millions of reviews.
 
-		- **Rows**: Millions of customer reviews (sampled for this project).
-		- **Columns**: Each review consists of two columns:
+		-Rows: Millions of customer reviews (sampled for this project).
+		- Columns: Each review consists of two columns:
 			1.Label: __label__1 for negative and __label__2 for positive reviews.
 			2.Text: The actual customer review content.
-		- **Target Variable**: Sentiment (positive or negative).
+		- Target Variable: Sentiment (positive or negative).
 
 ## Techniques Used:
 1. **Data Preprocessing**:
@@ -27,26 +27,26 @@ This project utilizes Natural Language Processing (NLP) to perform sentiment ana
 	
 
 ## Project Steps:
-	 **Data Preprocessing**:
+Data Preprocessing:
 		1.Removed missing values from the dataset.
 		2.Cleaned text data by removing special characters, converting text to lowercase, and tokenizing.
 		3.Vectorized the text using TF-IDF for machine learning models.
 
 ## Exploratory Data Analysis (EDA):
-	Analyzed key features such as word frequency and sentiment distribution.
-	Created visualizations showing customer review sentiment trends.
+	1.Analyzed key features such as word frequency and sentiment distribution.
+	2.Created visualizations showing customer review sentiment trends.
 
 ## Modeling:
-	Trained classification models, including:
-		Logistic Regression
-		Random Forest
-		XGBoost
-		LSTM
-		Applied cross-validation and hyperparameter tuning to optimize model performance.
+Trained classification models, including:
+		1.Logistic Regression
+		2.Random Forest
+		3.XGBoost
+		4.LSTM
+		5.Applied cross-validation and hyperparameter tuning to optimize model performance.
 
 ## Model Evaluation:
 	Evaluated models using metrics such as accuracy, precision, recall, F1-score, and ROC-AUC.
-	### Results:
+Results:
 	Best Model: The LSTM model performed the best with:
 	Accuracy: 88%
 	ROC-AUC: 0.94
