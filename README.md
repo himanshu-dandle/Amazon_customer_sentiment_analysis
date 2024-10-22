@@ -28,19 +28,19 @@ This project aims to perform sentiment analysis on Amazon product reviews, using
 3. **Model Evaluation**:
 	Accuracy, Precision, Recall, F1-Score, and ROC-AUC to evaluate and compare model performance.
 	
-Results
+**Results**:
 	Best Model: The LSTM (Long Short-Term Memory) model provided the best performance:
 	Accuracy: 88.00%
 	ROC-AUC Score: 0.9407
 
-Model Performance Comparison:
+**Model Performance Comparison**:
 
-| Model               | Accuracy | Precision | Recall | ROC-AUC |
-|---------------------|----------|-----------|--------|---------|
-| Logistic Regression  | 87.02%   | 88%       | 87%    | 0.9432  |
-| Random Forest        | 84.15%   | 85%       | 84%    | 0.9196  |
-| XGBoost              | 84.35%   | 86%       | 85%    | 0.9235  |
-| LSTM                 | 88.00%   | 89%       | 88%    | 0.9407  |
+	| Model               | Accuracy | Precision | Recall | ROC-AUC |
+	|---------------------|----------|-----------|--------|---------|
+	| Logistic Regression  | 87.02%   | 88%       | 87%    | 0.9432  |
+	| Random Forest        | 84.15%   | 85%       | 84%    | 0.9196  |
+	| XGBoost              | 84.35%   | 86%       | 85%    | 0.9235  |
+	| LSTM                 | 88.00%   | 89%       | 88%    | 0.9407  |
 
 
 ## Visualizations:
