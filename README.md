@@ -28,12 +28,12 @@ This project aims to perform sentiment analysis on Amazon product reviews, using
 3. **Model Evaluation**:
 	Accuracy, Precision, Recall, F1-Score, and ROC-AUC to evaluate and compare model performance.
 	
-##Results
-Best Model: The LSTM (Long Short-Term Memory) model provided the best performance:
+Results
+	Best Model: The LSTM (Long Short-Term Memory) model provided the best performance:
 	Accuracy: 88.00%
 	ROC-AUC Score: 0.9407
 
-##Model Performance Comparison:
+Model Performance Comparison:
 
 | Model               | Accuracy | Precision | Recall | ROC-AUC |
 |---------------------|----------|-----------|--------|---------|
@@ -96,5 +96,5 @@ Place the train.ft.txt and test.ft.txt files in the data/ folder.
 
 	jupyter notebook notebooks/sentiment_analysis.ipynb
 	
-##Conclusion
+## Conclusion
 The LSTM model outperformed traditional machine learning models like Logistic Regression and Random Forest in sentiment analysis tasks for Amazon product reviews, demonstrating the effectiveness of deep learning models in text-based classification tasks.
