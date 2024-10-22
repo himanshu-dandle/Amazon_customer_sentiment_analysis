@@ -1,4 +1,4 @@
-#Amazon Customer Sentiment Analysis
+# Amazon Customer Sentiment Analysis
 
 This project utilizes Natural Language Processing (NLP) to perform sentiment analysis on customer reviews of Amazon products. By applying various machine learning models,
 including Logistic Regression, Random Forest, XGBoost, and LSTM, the goal is to classify customer reviews as either positive or negative.
@@ -90,7 +90,7 @@ These visualizations help demonstrate the performance of the models and show the
 
 These visualizations provide insights into model performance and feature importance.
 
-##Model Performance Comparison:
+- **Model Performance Comparison**:
 
 | Model               | Accuracy | Precision | Recall | ROC-AUC |
 |---------------------|----------|-----------|--------|---------|
