@@ -1,38 +1,48 @@
 #Amazon Customer Sentiment Analysis
-
-This project performs sentiment analysis on Amazon customer reviews using various machine learning models like Random Forest, Logistic Regression, XGBoost, and LSTM. The dataset consists of customer reviews, aiming to predict whether the review has a positive or negative sentiment.
+This project utilizes Natural Language Processing (NLP) to perform sentiment analysis on customer reviews of Amazon products. By applying various machine learning models,
+ including Logistic Regression, Random Forest, XGBoost, and LSTM, the goal is to classify customer reviews as either positive or negative.
 
 ## Project Overview:
-	### Goal: Classify customer reviews as positive or negative based on textual data.
-	### Dataset: Amazon Customer Reviews dataset from Kaggle.
-	### Rows: ~500,000 reviews
-	### Columns: Includes review text, product IDs, and user IDs.
-	### Target Variable: Sentiment (positive/negative)
+	-**Goal**-: To accurately classify customer reviews as positive or negative using machine learning techniques on text data.
+	- **Dataset**: The dataset consists of Amazon customer reviews, where reviews are labeled as either positive or negative. It is sourced from a text file containing millions of reviews.
+
+		- **Rows**: Millions of customer reviews (sampled for this project).
+		- **Columns**: Each review consists of two columns:
+			1.Label: __label__1 for negative and __label__2 for positive reviews.
+			2.Text: The actual customer review content.
+		- **Target Variable**: Sentiment (positive or negative).
 
 ## Techniques Used:
-	### Data Preprocessing:
+1. **Data Preprocessing**:
 	Cleaned text (removing special characters, numbers, and stopwords).
 	Tokenized and vectorized using TF-IDF to transform text into numerical data.
 
-## Exploratory Data Analysis (EDA):
+2. **Exploratory Data Analysis (EDA)**:
 	Visualized distribution of sentiment labels, most frequent words, and the relationship between word frequency and sentiment.
-	### Modeling:
 
-		Built and evaluated multiple models: Logistic Regression, Random Forest, XGBoost, and LSTM.
-		Applied cross-validation and hyperparameter tuning to improve model performance.
+3. **Model Evaluation**:
+  	--Built and evaluated multiple models: Logistic Regression, Random Forest, XGBoost, and LSTM.
+	--Applied cross-validation and hyperparameter tuning to improve model performance.
+	--Models were evaluated using accuracy, precision, recall, F1-score, and ROC-AUC metrics.
+	
 
 ## Project Steps:
-	### Data Preprocessing:
-		Handled missing values and text cleaning.
-		Used TF-IDF vectorization to convert text into numerical form for modeling.
+	 **Data Preprocessing**:
+		1.Removed missing values from the dataset.
+		2.Cleaned text data by removing special characters, converting text to lowercase, and tokenizing.
+		3.Vectorized the text using TF-IDF for machine learning models.
 
 ## Exploratory Data Analysis (EDA):
 	Analyzed key features such as word frequency and sentiment distribution.
 	Created visualizations showing customer review sentiment trends.
 
 ## Modeling:
-	Trained models like Random Forest, Logistic Regression, XGBoost, and LSTM.
-	Applied hyperparameter tuning using RandomizedSearchCV to improve results.
+	Trained classification models, including:
+		Logistic Regression
+		Random Forest
+		XGBoost
+		LSTM
+		Applied cross-validation and hyperparameter tuning to optimize model performance.
 
 ## Model Evaluation:
 	Evaluated models using metrics such as accuracy, precision, recall, F1-score, and ROC-AUC.
@@ -46,8 +56,9 @@ This project performs sentiment analysis on Amazon customer reviews using variou
 	Review Length
 
 ## Improvements:
-	### Class Imbalance: Addressed using SMOTE to balance the number of positive and negative reviews.
-	### Hyperparameter Tuning: Used RandomizedSearchCV for optimizing model performance.
+	1.Data Augmentation: Implemented SMOTE to handle class imbalance in the dataset.
+	2.Hyperparameter Tuning: Used RandomizedSearchCV to fine-tune hyperparameters for Random Forest, Logistic Regression, and XGBoost.
+	3.Deep Learning: Integrated LSTM for sequence modeling, which improved accuracy and the ROC-AUC score.
 
 
 ## Visualizations:
